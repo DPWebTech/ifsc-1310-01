@@ -82,6 +82,52 @@ img{
     padding-left: 50px;
     width: 50%;
 }
+.faq-content{
+    width: 900px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+.faq-item{
+    
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
+}
+.faq-item h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.642);
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: rgba(0, 0, 0, 0.562);
+    
+}
+.faq-title{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.history-item{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.history-title{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.history-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.history-table th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+.history-table th{
+    background-color: rgb(216, 218, 218);
+}
 
 .footer{
     width: 100%;
