@@ -138,3 +138,81 @@ img{
 .footer p{
     padding-top: 15px;
 }
+/* Capabilities Section */
+.capabilities {
+    padding: 2em;
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.capabilities h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.capabilities-grid {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.capability {
+    flex: 1;
+    max-width: 300px;
+    padding: 1em;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.capability:hover {
+    transform: scale(1.05);
+}
+
+.capability h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(51, 102, 204);
+}
+
+.capability p {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .capabilities-grid {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center the content horizontally */
+        text-align: center; /* Center the text content */
+        padding: 10px; /* Added padding for better spacing */
+    }
+
+    .capability {
+        max-width: 90%;
+        margin-bottom: 20px; /* Added margin-bottom for spacing between items */
+        background-color: #fff; /* Added background color for better contrast */
+        padding: 15px; /* Added padding for better spacing */
+        border-radius: 5px; /* Added border radius for rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for subtle depth */
+    }
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Arial, sans-serif; /* Added a default font family */
+    background-color: #f4f4f4; /* Added a light background color */
+    padding: 20px; /* Added padding for better spacing */
+}
