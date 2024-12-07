@@ -195,18 +195,18 @@ img{
     .capabilities-grid {
         flex-direction: column;
         align-items: center;
-        justify-content: center; /* Center the content horizontally */
-        text-align: center; /* Center the text content */
-        padding: 10px; /* Added padding for better spacing */
+        justify-content: center; 
+        text-align: center; 
+        padding: 10px; 
     }
 
     .capability {
         max-width: 90%;
-        margin-bottom: 20px; /* Added margin-bottom for spacing between items */
-        background-color: #fff; /* Added background color for better contrast */
-        padding: 15px; /* Added padding for better spacing */
-        border-radius: 5px; /* Added border radius for rounded corners */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for subtle depth */
+        margin-bottom: 20px; 
+        background-color: #fff; 
+        padding: 15px; 
+        border-radius: 5px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     }
 }
 
@@ -214,16 +214,47 @@ body {
     font-size: 16px;
     line-height: 1.5em;
     color: rgba(0, 0, 0, 0.7);
-    font-family: Arial, sans-serif; /* Added a default font family */
-    background-color: #f4f4f4; /* Added a light background color */
-    padding: 20px; /* Added padding for better spacing */
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
 }
 #spaceXLogo {
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
   #spaceXLogo:hover {
-    transform: scale(1.2); /* Enlarges the logo on hover */
-    opacity: 0.8; /* Slightly fades the logo */
+    transform: scale(1.2); 
+    opacity: 0.8; 
   }
-  
+  .nav .right ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav .right ul li a:hover {
+    background-color: #3498db;
+    color: white;
+    border-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.nav .right ul li a:active {
+    background-color: #1abc9c;
+    color: white;
+    border-color: #16a085;
+}
+.logo {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Enlarges the logo on hover */
+    opacity: 0.8; /* Slightly fades the logo for a cool effect */
+}
+
