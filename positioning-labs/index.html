@@ -1,55 +1,97 @@
-/* Resetting default browser styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Pearson</title>
+    <style>
+        /* Resetting default browser styling */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
 
-body {
-  background-color: #e9e9e9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
+        body {
+          background-color: #e9e9e9;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+        }
 
-/* Grid Container */
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 10px; /* Space between boxes */
-  width: 80%;
-  max-width: 800px;
-  margin-bottom: 10px;
-}
+        /* Grid Container */
+        .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); /* Two columns */
+          gap: 10px; /* Space between boxes */
+          width: 80%;
+          max-width: 800px;
+          margin-bottom: 10px;
+        }
 
-/* Box Styling */
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  height: 150px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        /* Box Styling */
+        .box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-weight: bold;
+          height: 150px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-/* Individual Box Colors */
-.navy { background-color: #001f3f; }
-.teal { background-color: #39CCCC; }
-.blue { background-color: #0074D9; }
-.aqua { background-color: #7FDBFF; }
+        /* Individual Box Colors */
+        .navy { background-color: #001f3f; }
+        .teal { background-color: #39CCCC; }
+        .blue { background-color: #0074D9; }
+        .aqua { background-color: #7FDBFF; }
 
-/* Footer Styling */
-.footer {
-  width: 80%;
-  max-width: 800px;
-  text-align: center;
-  background-color: #555;
-  color: white;
-  padding: 10px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        /* Footer Styling */
+        .footer {
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+            background-color: #555;
+            color: white;
+            padding: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+  <h1>David Pearson</h1>
+  <nav>
+    <ul>
+      <li><a href="prototype/index.html">Prototype html assignment</a></li>
+      <li><a href="css-demo/index.html">css-demo</a></li>
+      <li><a href="html5assignment/index.html">html 5 assignment</a></li>
+      <li><a href="Flex Froggy Screenshot/">Flex Froggy Screenshot</a></li>
+      <li>
+        <ul>
+          <li><a href="positioning-labs/absolute-1.html">absolute-1</a></li>
+          <li><a href="positioning-labs/absolute-2.html">absolute-2</a></li>
+          <li><a href="positioning-labs/float-1.html">Float 1</a></li>
+          <li><a href="positioning-labs/float-2.html">Float 2</a></li>
+        </ul>
+      </li>
+      <li>
+        <img src="images/Andre_Bear.jpg" alt="Andre and The Giant Little Bear" />
+      </li>
+      <li>
+        <a href="Corel Vector Screenshot/">
+          <img src="Corel Vector Screenshot/screenshot.png" alt="Corel Vector Screenshot">
+        </a>
+      </li>
+      
+      
+    </ul>
+  </nav>
+  <footer class="footer">
+    <!-- Footer content here -->
+  </footer>
+</body>
+</html>
