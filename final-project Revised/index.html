@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>IFSC 1310 | David Pearson</title>
   <meta name="description" content="Keyword Rich Description">
   <meta name="author" content="David Pearson">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
   <style>
     .hidden { 
         display: none; 
@@ -17,6 +18,16 @@
         font-size: 14px;
         cursor: pointer;
     }
+    .slideshow {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+    .slideshow img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
   </style>
 </head>
 
@@ -26,7 +37,6 @@
         <img src="assets/img/SpaceX_Logo_Black.png" alt="SpaceX Logo" class="logo" id="spaceXLogo">
     </div>
     <div class="right">
-        <!-- Toggle Button -->
         <button id="toggleMenu">Toggle Menu</button>
         <ul id="menu">
             <li>
@@ -37,6 +47,9 @@
             </li>
             <li>
                 <a href="faqs.html">Faq</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
             </li>
         </ul>
     </div>
@@ -53,7 +66,12 @@
             </div>
         </div>
         <div class="right">
-            <img src="assets/img/Crew-Dragon-DM-1-Falcon-9-B1051-rollout-SpaceX-3-squarec.jpg" alt="" class="overview-img">
+            <div class="slideshow">
+                <div><img src="assets/img/elon.jpg" alt="Image 1"></div>
+                <div><img src="assets/img/fv1.jpeg" alt="Image 2"></div>
+                <div><img src="assets/img/fv2.jpg" alt="Image 3"></div>
+                <div><img src="assets/img/fv3.jpeg" alt="Image 4"></div>
+            </div>
         </div>
     </div>
 <div class="clear-both"></div>
@@ -85,8 +103,9 @@
     <p>© 2020 SpaceX | Report a Problem</p>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
 <script>
-  // JavaScript for toggling the menu
   document.getElementById("toggleMenu").addEventListener("click", function () {
     const menu = document.getElementById("menu");
     if (menu.classList.contains("hidden")) {
@@ -94,6 +113,16 @@
     } else {
       menu.classList.add("hidden");
     }
+  });
+
+  $(document).ready(function() {
+      $('.slideshow').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          adaptiveHeight: true
+      });
   });
 </script>
 

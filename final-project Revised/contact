@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>IFSC 1310 | David Pearson</title>
+  <meta name="description" content="Keyword Rich Description">
+  <meta name="author" content="David Pearson">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li>
+          <a href="index.html">Home</a>
+      </li>
+      <li>
+          <a href="history.html">History</a>
+      </li>
+      <li>
+          <a href="faqs.html">Faq</a>
+      </li>
+      <li>
+          <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Contact Information</h1>
+    <p>Name: David Pearson</p>
+    <p>Email: <a href="mailto:dpearson1@ualr.edu">dpearson1@ualr.edu</a></p>
+  </div>
+</body>
+</html>
